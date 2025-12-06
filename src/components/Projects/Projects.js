@@ -164,7 +164,7 @@ const defaultProjects = [
 
 const Projects = () => {
   const projectsRef = useRef(null);
-  const [projects, setProjects] = useState(defaultProjects);
+  const [projects] = useState(defaultProjects);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

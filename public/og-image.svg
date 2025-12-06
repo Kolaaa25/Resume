@@ -24,10 +24,29 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="iconGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
   <rect width="1200" height="630" fill="url(#glow1)"/>
   <rect width="1200" height="630" fill="url(#glow2)"/>
+  
+  <!-- Small icon in top-left corner -->
+  <g transform="translate(50, 50)">
+    <rect width="50" height="50" rx="12" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="25" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#a78bfa" text-anchor="middle" filter="url(#iconGlow)">M</text>
+  </g>
+  
+  <!-- Link icon in bottom-right corner -->
+  <g transform="translate(1100, 530)">
+    <circle cx="25" cy="25" r="25" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="1"/>
+    <path d="M20 30L30 20M30 20H24M30 20V26" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
   
   <!-- Floating elements -->
   <circle cx="150" cy="150" r="3" fill="#9d4edd" opacity="0.6"/>
@@ -36,18 +55,15 @@
   <circle cx="1000" cy="130" r="3" fill="#9d4edd" opacity="0.5"/>
   <circle cx="600" cy="100" r="2" fill="#c4b5fd" opacity="0.3"/>
   
-  <!-- Border glow -->
-  <rect x="40" y="40" width="1120" height="550" rx="24" stroke="url(#textGradient)" stroke-width="2" fill="none" opacity="0.3"/>
-  
   <!-- Badge -->
-  <rect x="475" y="160" width="250" height="40" rx="20" fill="rgba(167,139,250,0.1)" stroke="#a78bfa" stroke-width="1"/>
-  <text x="600" y="187" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#a78bfa" text-anchor="middle" letter-spacing="3">FRONTEND DEVELOPER</text>
+  <rect x="475" y="180" width="250" height="40" rx="20" fill="rgba(167,139,250,0.1)" stroke="#a78bfa" stroke-width="1"/>
+  <text x="600" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#a78bfa" text-anchor="middle" letter-spacing="3">FRONTEND DEVELOPER</text>
   
   <!-- Name -->
-  <text x="600" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle" filter="url(#glow)">Mykola Matekha</text>
+  <text x="600" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle" filter="url(#glow)">Mykola Matekha</text>
   
   <!-- Subtitle -->
-  <text x="600" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#a8c5e2" text-anchor="middle" opacity="0.8">Building modern web experiences</text>
+  <text x="600" y="365" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#a8c5e2" text-anchor="middle" opacity="0.8">Building modern web experiences</text>
   
   <!-- Tech stack -->
   <g transform="translate(600, 440)">
@@ -71,5 +87,5 @@
   </g>
   
   <!-- Website URL -->
-  <text x="600" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#a78bfa" text-anchor="middle" opacity="0.7">matehakola@gmail.com</text>
+  <text x="600" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#a78bfa" text-anchor="middle" opacity="0.7">matehakola@gmail.com</text>
 </svg>
