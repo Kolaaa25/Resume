@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Mykola Matekha - Neon Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A stunning, modern portfolio website built with React and Bootstrap featuring a dark neon tech aesthetic with smooth animations.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🎨 **Dark Neon Tech Design** - Soft cold blue and neon red accents
+- ⚡ **Smooth Animations** - Scroll-triggered fade-ins, slide-ups, and floating effects
+- 🔄 **Animated Loader** - Circular neon progress loader with percentage counter
+- 🎭 **Welcome Animation** - Letter-by-letter fade-in with neon glow
+- 🛠 **Animated SVG Icons** - Custom neon-styled skill icons
+- 📱 **Fully Responsive** - Works beautifully on all devices
+- 🌐 **API Integration** - Fetches project data from backend
+- 🎯 **Modular Components** - Clean, maintainable code structure
 
-### `npm start`
+## 🚀 Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend (React)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Install dependencies
+npm install
 
-### `npm test`
+# Start development server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Build for production
+npm run build
+```
 
-### `npm run build`
+### Backend (Express)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Navigate to server folder
+cd server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start server
+npm start
+```
 
-### `npm run eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+portfolio/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Loader/
+│   │   ├── WelcomeAnimation/
+│   │   ├── Hero/
+│   │   ├── Skills/
+│   │   ├── Projects/
+│   │   ├── Certificates/
+│   │   ├── Footer/
+│   │   └── FloatingElements/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── server/
+│   ├── server.js
+│   └── package.json
+├── vercel.json
+└── package.json
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Color Palette
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Background | `#0a0a0a` | Main dark background |
+| Primary | `#7db8e8` | Soft cold blue |
+| Accent | `#ff3366` | Neon red highlights |
+| Neon Blue | `#00d4ff` | Glow effects |
+| Text Primary | `#e6f1ff` | Main text |
+| Text Secondary | `#a8c5e2` | Subtle text |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌐 Deployment
 
-## Learn More
+### Frontend (Vercel)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Set environment variable: `REACT_APP_API_URL=your-render-backend-url`
+4. Deploy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend (Render)
 
-### Code Splitting
+1. Create new Web Service on Render
+2. Connect to GitHub repository
+3. Set root directory to `server`
+4. Build command: `npm install`
+5. Start command: `npm start`
+6. Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠 Technologies
 
-### Analyzing the Bundle Size
+- **Frontend**: React, Bootstrap, React-Bootstrap
+- **Backend**: Express, Node.js
+- **HTTP Client**: Axios
+- **Styling**: CSS3 with custom properties
+- **Fonts**: Inter (Google Fonts)
+- **Animations**: CSS keyframes, transitions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📧 Contact
 
-### Making a Progressive Web App
+- **Email**: matehakola@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
+This project is open source and available under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ♥ by Mykola Matekha
